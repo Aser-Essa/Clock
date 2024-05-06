@@ -22,7 +22,7 @@ useEffect(() => {
         setSecDeg(prev => prev + 6)
         const minutes = time.getMinutes()
         setMinDeg(minutes * 6)
-        const hours = time.getHours() % 12
+        const hours = time.getHours()+1 % 12
         setHoursDeg(hours * 30)
         } , 1000)
         return () => {clearInterval(timer)}
