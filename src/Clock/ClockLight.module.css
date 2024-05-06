@@ -1,0 +1,119 @@
+.clockContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    background-image: url(./clock.png);
+    background-size: cover;
+    border: 20px solid white;
+    box-shadow: inset 0px -4px 7px 1px #00000029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.darkContainer {
+    border: none;
+    background-color: rgb(18, 25, 36);
+    box-shadow: 
+    inset 0px -8px 15px 1px rgb(33 41 53 / 75%),
+    inset 0px 8px 15px 1px rgb(10 12 16 / 75%),
+    0px 8px 15px 1px rgb(10 12 16 / 75%),
+    0px -8px 15px 1px rgb(33 41 53 / 75%);
+}
+
+
+.center {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+.circle {
+    width: 17px;
+    height: 17px;
+    background-color: rgb(129, 129, 129);
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 50%;
+    z-index: 1000;
+}
+.darkCircle {
+    background-color: white;
+    border: none;
+}
+
+
+.handHours {
+    position: relative;
+    top:  0;
+    left: 4px;
+    transform: rotate(180deg) translateY(35px);
+    height: 70px;
+    width: 6px;
+    border-radius: 12px;
+    background-color: rgb(129, 129, 129);
+}
+.darkHours {
+    background-color: rgb(213, 20, 91);
+}
+
+
+.handMinutes {
+    position: relative;
+    top:  0;
+    left: -1px;
+    height: 80px;
+    width: 5px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 12px;
+}
+.darkMinutes {
+    background-color: white;
+}
+
+.handSecounds {
+    position: relative;
+    top:  0;
+    left: -6px;
+    height: 135px;
+    width: 3px;
+    background-color: rgb(255, 77, 77);
+    border-radius: 12px;
+}
+.darkSecounds {
+    background-color: rgb(69, 136, 245);
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    font-size: 30px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: -4px 3px 8px #00000036;
+    color: white;
+    background-color: rgb(18, 25, 36);
+    cursor: pointer;
+}
+
+.darkButton {
+    background-color: rgb(76, 140, 235);
+    box-shadow: -4px 3px 8px rgba(84, 96, 112, 0.75);
+}
+
+@media (max-width:767px) {
+    button {
+        font-size: 25px;
+        padding: 10px 14px;
+        top: 560px;
+    }
+}
